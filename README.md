@@ -12,5 +12,5 @@ of predictors with small-to-large effects.
 This package can be installed from Github by using `devtools`.
 
 ``` r
-devtools::install("yhai943/BLMM")
+devtools::install_github("yhai943/BLMM")
 ```
