@@ -4,12 +4,16 @@
 #' @param epsilon a threshold for the increase of the variance
 #' @param maf_beta a filtering threshold for the weight of parameter beta
 #' @param maf_u a filtering threshold for the weight of parameter U
-#'
+#' @usage vb_predictive(fit, epsilon = 1e-3, maf_beta = 0.5, maf_u = 0.5)
 #' @examples
 #' fit <- vb_fit_rarecommon(y = y_train, genotype = data, weight.type = "wss")
 #' vb_predictive(fit, epsilon, maf_beta, maf_u)
 #' @export
-vb_predictive <- function(fit, epsilon = 1e-3, maf_beta = 0.5, maf_u = 0.5) {
+vb_predictive <- function(x, ...) {
+  UseMethod("vb_predictive")
+}
+
+vb_predictive.vb <- function(fit, epsilon = 1e-3, maf_beta = 0.5, maf_u = 0.5) {
 
   #------------------------------------------------------------------------------------------------------------
   # (0) initial

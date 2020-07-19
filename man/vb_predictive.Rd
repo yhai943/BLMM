@@ -4,7 +4,7 @@
 \alias{vb_predictive}
 \title{Bayesian linear mixed model with multiple random effects}
 \usage{
-vb_predictive(fit, epsilon = 0.001, maf_beta = 0.5, maf_u = 0.5)
+vb_predictive(fit, epsilon = 1e-3, maf_beta = 0.5, maf_u = 0.5)
 }
 \arguments{
 \item{fit}{\code{vb} fit from \code{vb_fit_rare_common}}
