@@ -20,7 +20,7 @@
 #' nearby genetic regions.
 #' @examples
 #' data("data", package = "BLMM")
-#' # choose model type: 1. "uw" for BLMM-UW; 2. "beta" for BLMM-BETA; . "wss" for BLMM-WSS;
+#' # choose model type: 1. "uw" for BLMM-UW; 2. "beta" for BLMM-BETA; 3. "wss" for BLMM-WSS;
 #' fit <- vb_fit_rarecommon(y = y_train, genotype = data, weight.type = "wss")
 #' @importFrom MASS ginv
 #' @importFrom data.table first
