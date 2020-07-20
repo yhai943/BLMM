@@ -63,7 +63,7 @@ vb_fit_rarecommon <- function(y, genotype0, max_iter = 25000, weight.type = NULL
   yc <- scale(y, center = T, scale = T)[-index_test]
 
   center <- attr(scale(y, center = T, scale = T), "scaled:center")
-  scale <- attr(scale(y, center = T, scale = T), " scaled:scale")
+  scale <- attr(scale(y, center = T, scale = T), "scaled:scale")
   #--------------------------- select the gene start------------------------------
 
   genotype <- genotype0

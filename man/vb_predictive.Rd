@@ -20,5 +20,5 @@ Bayesian linear mixed model with multiple random effects
 }
 \examples{
 fit <- vb_fit_rarecommon(y = y_train, genotype = data, weight.type = "wss")
-vb_predictive(fit, epsilon, maf_beta, maf_u)
+vb_predictive(fit)
 }
