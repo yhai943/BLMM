@@ -19,9 +19,9 @@
 #' predictors, whereas the LMM part is to capture the effects from a group of predictors located in
 #' nearby genetic regions.
 #' @examples
-#' load(data)
+#' data("data", package = "BLMM")
 #' # choose model type: 1. "uw" for BLMM-UW; 2. "beta" for BLMM-BETA; . "wss" for BLMM-WSS;
-#' fit <- vb_fit_rarecommon(y = y_train, genotype = data[1], weight.type = "wss")
+#' fit <- vb_fit_rarecommon(y = y_train, genotype = data, weight.type = "wss")
 #' @importFrom MASS ginv
 #' @importFrom data.table first
 #' @importFrom boot logit inv.logit
